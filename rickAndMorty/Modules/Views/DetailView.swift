@@ -12,28 +12,29 @@ struct DetailView: View {
     let results: Results
     
     var body: some View {
-        VStack(spacing: 0) {
-            VStack(alignment: .leading, spacing: 12) {
+        VStack(spacing: .zero) {
+            VStack(alignment: .leading, spacing: Constants.innerVStackSpacing) {
                 
-                VStack(spacing: 12) {
+                VStack(spacing: Constants.innerVStackSpacing) {
                     AsyncImage(url: URL(string: results.image)) { phase in
                         phase.image?
                             .resizable()
-                            .frame(maxWidth: 320, maxHeight: 320)
-                            .clipShape(RoundedRectangle(cornerRadius: 10.0))
+                            .frame(maxWidth: Constants.imageMaxWidth,
+                                   maxHeight: Constants.imageMaxHeight)
+                            .clipShape(RoundedRectangle(cornerRadius: Constants.imageCornerRadius))
                     }
                     
                     Button(action: {}) {
-                               Text(results.status)
-                                   .font(.custom("IBMPlexSans-SemiBold", size: 16))
-                                   .foregroundColor(.white)
-                                   .frame(maxWidth: 320, maxHeight: 42)
-                                   .background(statusColor(status: results.status))
-                                   .clipShape(Capsule())
-                           }
-                           .buttonStyle(PlainButtonStyle())
-                           .cornerRadius(16)
-                    
+                        Text(results.status)
+                            .font(.custom("IBMPlexSans-SemiBold", size: Constants.statusFontSize))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: Constants.statusMaxWidth,
+                                   maxHeight: Constants.statusMaxHeight)
+                            .background(statusColor(status: results.status))
+                            .clipShape(Capsule())
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .cornerRadius(Constants.buttonCornerRadius)
                 }
                 
                 VStack(alignment: .leading) {
@@ -42,11 +43,12 @@ struct DetailView: View {
                     Text("Episodes: \(extractEpisodeNumbers(from: results.episode))")
                     Text("Last known location: \(results.location.name)")
                 }
-                .font(.custom("IBMPlexSans-Regular", size: 14))
-                
+                .font(.custom("IBMPlexSans-Regular",
+                              size: Constants.infoFontSize))
+                .fontWeight(.semibold)
             }
             .padding()
-            .clipShape(RoundedRectangle(cornerRadius: 20.0))
+            .clipShape(RoundedRectangle(cornerRadius: Constants.outerVStackCornerRadius))
             
             Spacer()
         }
@@ -54,30 +56,49 @@ struct DetailView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text(results.name)
-                    .font(.custom("IBMPlexSans-Bold", size: 24))
+                    .font(.custom("IBMPlexSans-Bold",
+                                  size: Constants.titleFontSize))
             }
         }
         .navigationBarTitleDisplayMode(.inline)
         .containerRelativeFrame([.horizontal, .vertical])
-        //        .background(Color(UIColor.label))
     }
     
     func statusColor(status: String) -> Color {
-            switch status.lowercased() {
-            case "alive":
-                return Color.green.opacity(0.6)
-            case "dead":
-                return Color.red.opacity(0.6)
-            case "unknown":
-                return Color.gray.opacity(0.6)
-            default:
-                return Color.gray.opacity(0.6)
-            }
+        switch status.lowercased() {
+        case "alive":
+            return Colors.greenAlive
+        case "dead":
+            return Colors.redDead
+        case "unknown":
+            return Colors.greyUnknown
+        default:
+            return Color.green
         }
-    ///function takes an array of URLs, extracts the last component of each URL
+    }
+    
+    /// Function takes an array of URLs, extracts the last component of each URL
     func extractEpisodeNumbers(from urls: [String]) -> String {
         return urls.compactMap { url in
             URL(string: url)?.lastPathComponent
         }.joined(separator: ", ")
+    }
+}
+
+//MARK: - Constants
+
+fileprivate extension DetailView {
+    enum Constants {
+        static let innerVStackSpacing: CGFloat = 12
+        static let imageMaxWidth: CGFloat = 320
+        static let imageMaxHeight: CGFloat = 320
+        static let imageCornerRadius: CGFloat = 10
+        static let statusFontSize: CGFloat = 16
+        static let statusMaxWidth: CGFloat = 320
+        static let statusMaxHeight: CGFloat = 42
+        static let buttonCornerRadius: CGFloat = 16
+        static let infoFontSize: CGFloat = 16
+        static let outerVStackCornerRadius: CGFloat = 20
+        static let titleFontSize: CGFloat = 24
     }
 }

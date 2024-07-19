@@ -8,10 +8,10 @@
 import SwiftUI
 
 enum Colors {
-    static let baseText = UIColor(named: "baseText") ?? UIColor.black
-    static let foreground = UIColor(named: "foreground") ?? UIColor.white
-    static let foregroundList = UIColor(named: "foregroundList") ?? UIColor.gray
-    static let greenAlive = UIColor(named: "greenAlive") ?? UIColor.green
-    static let greyUnknown = UIColor(named: "greyUnknown") ?? UIColor.lightGray
-    static let redDead = UIColor(named: "redDead") ?? UIColor.red
+    static let baseText = Color("baseText")
+    static let foreground = Color("foreground")
+    static let foregroundList = Color("foregroundList")
+    static let greenAlive = Color("greenAlive")
+    static let greyUnknown = Color("greyUnknown")
+    static let redDead = Color("redDead")
 }
