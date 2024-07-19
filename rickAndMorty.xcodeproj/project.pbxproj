@@ -7,19 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52EC4BBE2C47EC5300A12E11 /* rickAndMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC4BBD2C47EC5300A12E11 /* rickAndMortyApp.swift */; };
 		52EC4BC02C47EC5300A12E11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC4BBF2C47EC5300A12E11 /* ContentView.swift */; };
 		52EC4BC22C47EC5400A12E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EC4BC12C47EC5400A12E11 /* Assets.xcassets */; };
 		52EC4BC62C47EC5400A12E11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EC4BC52C47EC5400A12E11 /* Preview Assets.xcassets */; };
+		52EC4BCF2C47F1D100A12E11 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC4BCE2C47F1D100A12E11 /* Characters.swift */; };
+		52EC4BD22C47F25600A12E11 /* RickAndMortyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC4BD12C47F25600A12E11 /* RickAndMortyViewModel.swift */; };
+		52EC4BD52C47F2B700A12E11 /* RickAndMortyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC4BD42C47F2B700A12E11 /* RickAndMortyProtocol.swift */; };
+		52EC4BD72C47F2E900A12E11 /* RickAndMortyDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC4BD62C47F2E900A12E11 /* RickAndMortyDataService.swift */; };
+		52F500522C4956F100F44669 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F500512C4956F100F44669 /* Main.swift */; };
+		52F500542C49730100F44669 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F500532C49730100F44669 /* DetailView.swift */; };
+		52F500592C4A754F00F44669 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F500582C4A754F00F44669 /* Colors.swift */; };
+		52F500602C4A83D200F44669 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F5005C2C4A83D200F44669 /* IBMPlexSans-Regular.ttf */; };
+		52F500612C4A83D200F44669 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F5005D2C4A83D200F44669 /* IBMPlexSans-Medium.ttf */; };
+		52F500622C4A83D200F44669 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F5005E2C4A83D200F44669 /* IBMPlexSans-SemiBold.ttf */; };
+		52F500632C4A83D200F44669 /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52F5005F2C4A83D200F44669 /* IBMPlexSans-Bold.ttf */; };
+		52F500682C4AE02E00F44669 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F500672C4AE02E00F44669 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52EC4BBA2C47EC5300A12E11 /* rickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52EC4BBD2C47EC5300A12E11 /* rickAndMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rickAndMortyApp.swift; sourceTree = "<group>"; };
 		52EC4BBF2C47EC5300A12E11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52EC4BC12C47EC5400A12E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52EC4BC32C47EC5400A12E11 /* rickAndMorty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = rickAndMorty.entitlements; sourceTree = "<group>"; };
 		52EC4BC52C47EC5400A12E11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52EC4BCE2C47F1D100A12E11 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		52EC4BD12C47F25600A12E11 /* RickAndMortyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyViewModel.swift; sourceTree = "<group>"; };
+		52EC4BD42C47F2B700A12E11 /* RickAndMortyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyProtocol.swift; sourceTree = "<group>"; };
+		52EC4BD62C47F2E900A12E11 /* RickAndMortyDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyDataService.swift; sourceTree = "<group>"; };
+		52F500512C4956F100F44669 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		52F500532C49730100F44669 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		52F500582C4A754F00F44669 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		52F5005C2C4A83D200F44669 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		52F5005D2C4A83D200F44669 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		52F5005E2C4A83D200F44669 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		52F5005F2C4A83D200F44669 /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
+		52F500642C4A882600F44669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		52F500672C4AE02E00F44669 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +75,13 @@
 		52EC4BBC2C47EC5300A12E11 /* rickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
-				52EC4BBD2C47EC5300A12E11 /* rickAndMortyApp.swift */,
-				52EC4BBF2C47EC5300A12E11 /* ContentView.swift */,
-				52EC4BC12C47EC5400A12E11 /* Assets.xcassets */,
-				52EC4BC32C47EC5400A12E11 /* rickAndMorty.entitlements */,
+				52F500502C4956E000F44669 /* Application */,
+				52F500642C4A882600F44669 /* Info.plist */,
+				52F500562C499A4800F44669 /* Modules */,
 				52EC4BC42C47EC5400A12E11 /* Preview Content */,
+				52EC4BC32C47EC5400A12E11 /* rickAndMorty.entitlements */,
+				52F500552C499A2400F44669 /* Resources */,
+				52EC4BD32C47F28600A12E11 /* Services */,
 			);
 			path = rickAndMorty;
 			sourceTree = "<group>";
@@ -67,6 +92,88 @@
 				52EC4BC52C47EC5400A12E11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52EC4BCC2C47F18800A12E11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52EC4BBF2C47EC5300A12E11 /* ContentView.swift */,
+				52F500532C49730100F44669 /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52EC4BCD2C47F1BB00A12E11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52EC4BCE2C47F1D100A12E11 /* Characters.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52EC4BD02C47F1EE00A12E11 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				52EC4BD12C47F25600A12E11 /* RickAndMortyViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		52EC4BD32C47F28600A12E11 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52EC4BD42C47F2B700A12E11 /* RickAndMortyProtocol.swift */,
+				52EC4BD62C47F2E900A12E11 /* RickAndMortyDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52F500502C4956E000F44669 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				52F500512C4956F100F44669 /* Main.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		52F500552C499A2400F44669 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52F5005B2C4A83B600F44669 /* Colors */,
+				52F5005A2C4A83AD00F44669 /* Fonts */,
+				52EC4BC12C47EC5400A12E11 /* Assets.xcassets */,
+				52F500672C4AE02E00F44669 /* Launch Screen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52F500562C499A4800F44669 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				52EC4BCD2C47F1BB00A12E11 /* Models */,
+				52EC4BCC2C47F18800A12E11 /* Views */,
+				52EC4BD02C47F1EE00A12E11 /* View Models */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		52F5005A2C4A83AD00F44669 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				52F5005F2C4A83D200F44669 /* IBMPlexSans-Bold.ttf */,
+				52F5005D2C4A83D200F44669 /* IBMPlexSans-Medium.ttf */,
+				52F5005C2C4A83D200F44669 /* IBMPlexSans-Regular.ttf */,
+				52F5005E2C4A83D200F44669 /* IBMPlexSans-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		52F5005B2C4A83B600F44669 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				52F500582C4A754F00F44669 /* Colors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +235,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EC4BC62C47EC5400A12E11 /* Preview Assets.xcassets in Resources */,
+				52F500602C4A83D200F44669 /* IBMPlexSans-Regular.ttf in Resources */,
+				52F500632C4A83D200F44669 /* IBMPlexSans-Bold.ttf in Resources */,
+				52F500622C4A83D200F44669 /* IBMPlexSans-SemiBold.ttf in Resources */,
+				52F500612C4A83D200F44669 /* IBMPlexSans-Medium.ttf in Resources */,
 				52EC4BC22C47EC5400A12E11 /* Assets.xcassets in Resources */,
+				52F500682C4AE02E00F44669 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EC4BD52C47F2B700A12E11 /* RickAndMortyProtocol.swift in Sources */,
+				52F500592C4A754F00F44669 /* Colors.swift in Sources */,
 				52EC4BC02C47EC5300A12E11 /* ContentView.swift in Sources */,
-				52EC4BBE2C47EC5300A12E11 /* rickAndMortyApp.swift in Sources */,
+				52F500542C49730100F44669 /* DetailView.swift in Sources */,
+				52EC4BD22C47F25600A12E11 /* RickAndMortyViewModel.swift in Sources */,
+				52EC4BCF2C47F1D100A12E11 /* Characters.swift in Sources */,
+				52F500522C4956F100F44669 /* Main.swift in Sources */,
+				52EC4BD72C47F2E900A12E11 /* RickAndMortyDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +392,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rickAndMorty/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -312,12 +432,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rickAndMorty/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

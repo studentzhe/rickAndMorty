@@ -8,18 +8,16 @@
 import SwiftUI
 import Combine
 
-class RickAndMortyViewModel : ObservableObject {
+final class RickAndMortyViewModel : ObservableObject {
     
     @Published var charactersState: CharacterViewModelState = CharacterViewModelState.initial
     
     let rickAndMortyDataService: RickAndMortyDataServices = RickAndMortyDataServices()
     var cancellable = Set<AnyCancellable> ()
     
-    
     init () {
         getAllCharacters()
     }
-    
     
     func getAllCharacters () {
         charactersState = CharacterViewModelState.loading
@@ -41,13 +39,13 @@ class RickAndMortyViewModel : ObservableObject {
     func statusColor(status: String) -> Color {
             switch status.lowercased() {
             case "alive":
-                return Color.green.opacity(0.6)
+                return Colors.greenAlive
             case "dead":
-                return Color.red.opacity(0.6)
+                return Colors.redDead
             case "unknown":
-                return Color.gray.opacity(0.6)
+                return Colors.greyUnknown
             default:
-                return Color.gray.opacity(0.6)
+                return Color.green
             }
         }
 }
